@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed May  1 00:19:24 2024
+# Process ID: 6640
+# Current directory: C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11680 C:\Users\rayan\OneDrive - The Pennsylvania State University\Documents\Sem 4\CMPEN 331\Final Project\Final_Project_ExtraCredit\Final_Project.xpr
+# Log file: C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/vivado.log
+# Journal file: C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit\vivado.jou
+# Running On: Rayans-Laptop, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16856 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.xpr}
+uupdate_compile_order -fileset sources_1
+eset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation
+source testbench.tcl
+close_sim

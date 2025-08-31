@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Apr 30 22:52:05 2024
+# Process ID: 11568
+# Current directory: C:/Users/rayan/Desktop/Final_Project_ExtraCredit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1756 C:\Users\rayan\Desktop\Final_Project_ExtraCredit\Final_Project.xpr
+# Log file: C:/Users/rayan/Desktop/Final_Project_ExtraCredit/vivado.log
+# Journal file: C:/Users/rayan/Desktop/Final_Project_ExtraCredit\vivado.jou
+# Running On: Rayans-Laptop, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16856 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation
+source testbench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_sim
+launch_simulation
+source testbench.tcl
+synth_design -top Datapath -part xc7z010clg400-1 -lint 
+open_run synth_1 -name synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim

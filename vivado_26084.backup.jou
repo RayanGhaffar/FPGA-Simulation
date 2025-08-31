@@ -1,0 +1,134 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Apr 30 16:37:03 2024
+# Process ID: 26084
+# Current directory: C:/Users/jacop/Desktop/College/SPRING 24/CMPEN 331/Final_Project_ExtraCredit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18444 C:\Users\jacop\Desktop\College\SPRING 24\CMPEN 331\Final_Project_ExtraCredit\Final_Project.xpr
+# Log file: C:/Users/jacop/Desktop/College/SPRING 24/CMPEN 331/Final_Project_ExtraCredit/vivado.log
+# Journal file: C:/Users/jacop/Desktop/College/SPRING 24/CMPEN 331/Final_Project_ExtraCredit\vivado.jou
+# Running On: LAPTOP-JACOPO, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16856 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jacop/Desktop/College/SPRING 24/CMPEN 331/Final_Project_ExtraCredit/Final_Project.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+launch_simulation
+source testbench.tcl
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+close_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+launch_simulation
+source testbench.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source testbench.tcl
+close_sim
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source testbench.tcl
+close_sim
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+launch_simulation
+source testbench.tcl
+close_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+launch_simulation
+source testbench.tcl
+close_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+launch_simulation
+source testbench.tcl
+close_sim
