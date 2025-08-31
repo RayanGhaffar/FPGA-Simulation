@@ -1,0 +1,33 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-311] analyzing module PcAdder
+INFO: [VRFC 10-311] analyzing module IFIDPipeline
+INFO: [VRFC 10-311] analyzing module npcModule
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-311] analyzing module fwdaMux
+INFO: [VRFC 10-311] analyzing module fwdbMux
+INFO: [VRFC 10-311] analyzing module RegrtMux
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module ImmExt
+INFO: [VRFC 10-311] analyzing module IDEXEPipeline
+INFO: [VRFC 10-311] analyzing module ALU_Mux
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module EXEMEM_Pipeline
+INFO: [VRFC 10-311] analyzing module Data_Memory
+WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:721]
+INFO: [VRFC 10-311] analyzing module MEMWB_Pipeline
+INFO: [VRFC 10-311] analyzing module WriteBackMux
+INFO: [VRFC 10-311] analyzing module Lextender
+INFO: [VRFC 10-311] analyzing module Rextender
+INFO: [VRFC 10-311] analyzing module bpcadd
+INFO: [VRFC 10-311] analyzing module equal
+INFO: [VRFC 10-311] analyzing module exeadd
+INFO: [VRFC 10-311] analyzing module Alumux1
+INFO: [VRFC 10-311] analyzing module jalMux
+INFO: [VRFC 10-311] analyzing module jalf
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

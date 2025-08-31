@@ -1,0 +1,972 @@
+
+*** Running vivado
+    with args -log Datapath.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Datapath.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Datapath.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 474.277 ; gain = 183.379
+Command: synth_design -top Datapath -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8188
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 921.484 ; gain = 443.219
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9694] invalid size of integer constant literal [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:721]
+INFO: [Synth 8-6157] synthesizing module 'Datapath' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:884]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:41]
+INFO: [Synth 8-6157] synthesizing module 'PcAdder' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'PcAdder' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:94]
+INFO: [Synth 8-6157] synthesizing module 'IFIDPipeline' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'IFIDPipeline' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:106]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:148]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:245]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:241]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:148]
+INFO: [Synth 8-6157] synthesizing module 'RegrtMux' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:503]
+INFO: [Synth 8-6155] done synthesizing module 'RegrtMux' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:503]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:518]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:518]
+INFO: [Synth 8-6157] synthesizing module 'ImmExt' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:551]
+INFO: [Synth 8-6155] done synthesizing module 'ImmExt' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:551]
+INFO: [Synth 8-6157] synthesizing module 'fwdbMux' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'fwdbMux' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:473]
+INFO: [Synth 8-6157] synthesizing module 'fwdaMux' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:442]
+INFO: [Synth 8-6155] done synthesizing module 'fwdaMux' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:442]
+INFO: [Synth 8-6157] synthesizing module 'IDEXEPipeline' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:567]
+INFO: [Synth 8-6155] done synthesizing module 'IDEXEPipeline' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:567]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Mux' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:613]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Mux' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:613]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:629]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:637]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:629]
+INFO: [Synth 8-6157] synthesizing module 'EXEMEM_Pipeline' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:652]
+INFO: [Synth 8-6155] done synthesizing module 'EXEMEM_Pipeline' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:652]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:680]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:720]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:680]
+INFO: [Synth 8-6157] synthesizing module 'MEMWB_Pipeline' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:729]
+INFO: [Synth 8-6155] done synthesizing module 'MEMWB_Pipeline' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:729]
+INFO: [Synth 8-6157] synthesizing module 'WriteBackMux' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:753]
+INFO: [Synth 8-6155] done synthesizing module 'WriteBackMux' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:753]
+INFO: [Synth 8-6157] synthesizing module 'npcModule' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'npcModule' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:123]
+INFO: [Synth 8-6157] synthesizing module 'Lextender' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:770]
+INFO: [Synth 8-6155] done synthesizing module 'Lextender' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:770]
+INFO: [Synth 8-6157] synthesizing module 'Rextender' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:781]
+INFO: [Synth 8-6155] done synthesizing module 'Rextender' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:781]
+INFO: [Synth 8-6157] synthesizing module 'bpcadd' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:792]
+INFO: [Synth 8-6155] done synthesizing module 'bpcadd' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:792]
+INFO: [Synth 8-6157] synthesizing module 'equal' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:804]
+INFO: [Synth 8-6155] done synthesizing module 'equal' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:804]
+INFO: [Synth 8-6157] synthesizing module 'exeadd' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:821]
+INFO: [Synth 8-6155] done synthesizing module 'exeadd' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:821]
+INFO: [Synth 8-6157] synthesizing module 'Alumux1' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:831]
+INFO: [Synth 8-6155] done synthesizing module 'Alumux1' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:831]
+INFO: [Synth 8-6157] synthesizing module 'jalf' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:865]
+INFO: [Synth 8-6155] done synthesizing module 'jalf' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:865]
+INFO: [Synth 8-6157] synthesizing module 'jalMux' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:848]
+INFO: [Synth 8-6155] done synthesizing module 'jalMux' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:848]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath' (0#1) [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:884]
+WARNING: [Synth 8-7129] Port eimm32[31] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[30] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[29] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[28] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[27] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[26] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[25] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[24] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[23] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[22] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[21] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[20] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[19] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[18] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[17] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[16] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[15] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[14] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[13] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[12] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[11] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[5] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[4] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[3] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[2] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[1] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[0] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[27] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[26] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[25] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[24] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[23] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[22] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[21] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[20] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[19] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[18] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[17] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[16] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[15] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[14] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[13] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[12] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[11] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[10] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[9] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[8] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[7] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[6] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[5] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[4] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[3] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[2] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[1] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[0] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[31] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[30] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[29] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[28] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[27] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[26] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[25] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[24] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[23] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[22] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[21] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[20] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[19] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[18] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[17] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[16] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[15] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[14] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[13] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[12] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[11] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[10] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[9] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[8] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[7] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[6] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[5] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[4] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[3] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[2] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[1] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[0] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[31] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[30] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[29] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[28] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[27] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[26] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[25] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[24] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[23] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[22] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[21] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[20] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[19] in module InstructionMemory is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.309 ; gain = 554.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1032.309 ; gain = 554.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1032.309 ; gain = 554.043
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [Synth 8-327] inferring latch for variable 'wreg_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:234]
+WARNING: [Synth 8-327] inferring latch for variable 'm2reg_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:235]
+WARNING: [Synth 8-327] inferring latch for variable 'wmem_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:236]
+WARNING: [Synth 8-327] inferring latch for variable 'aluc_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:237]
+WARNING: [Synth 8-327] inferring latch for variable 'aluimm_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:251]
+WARNING: [Synth 8-327] inferring latch for variable 'regrt_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:252]
+WARNING: [Synth 8-327] inferring latch for variable 'pcsrc_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:244]
+WARNING: [Synth 8-327] inferring latch for variable 'jal_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:243]
+WARNING: [Synth 8-327] inferring latch for variable 'i_rt_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:223]
+WARNING: [Synth 8-327] inferring latch for variable 'i_rs_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:222]
+WARNING: [Synth 8-327] inferring latch for variable 'sext_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:330]
+WARNING: [Synth 8-327] inferring latch for variable 'r_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:638]
+WARNING: [Synth 8-327] inferring latch for variable 'npc_reg' [C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:134]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1032.309 ; gain = 554.043
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   4 Input   32 Bit        Muxes := 3     
+	  10 Input   32 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   8 Input    4 Bit        Muxes := 1     
+	  13 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	  10 Input    2 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 4     
+	  13 Input    1 Bit        Muxes := 13    
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[31]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[30]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[29]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[28]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[27]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[26]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[25]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[24]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[23]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[22]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[21]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[20]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[19]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[18]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[17]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[16]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[15]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[14]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[13]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[12]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[11]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[10]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[9]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[8]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[7]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[6]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[5]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[4]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[3]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[2]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[1]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[0]) is unused and will be removed from module Datapath.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:01:11 . Memory (MB): peak = 1315.797 ; gain = 837.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------------+------------+---------------+----------------+
+|Module Name       | RTL Object | Depth x Width | Implemented As | 
++------------------+------------+---------------+----------------+
+|InstructionMemory | rom        | 64x30         | LUT            | 
+|Datapath          | p_0_out    | 64x30         | Block RAM      | 
++------------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------------+-----------+----------------------+----------------+
+|Datapath    | RegFileDP/registers_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|Datapath    | Data_Memory_DP/ram_reg  | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+-------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:01:11 . Memory (MB): peak = 1315.797 ; gain = 837.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------------+-----------+----------------------+----------------+
+|Datapath    | RegFileDP/registers_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|Datapath    | Data_Memory_DP/ram_reg  | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+-------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:01:12 . Memory (MB): peak = 1315.797 ; gain = 837.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:01:22 . Memory (MB): peak = 1315.797 ; gain = 837.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:01:22 . Memory (MB): peak = 1315.797 ; gain = 837.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:01:22 . Memory (MB): peak = 1315.797 ; gain = 837.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:01:22 . Memory (MB): peak = 1315.797 ; gain = 837.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:01:22 . Memory (MB): peak = 1315.797 ; gain = 837.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:01:22 . Memory (MB): peak = 1315.797 ; gain = 837.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    35|
+|3     |LUT1     |     5|
+|4     |LUT2     |    55|
+|5     |LUT3     |   110|
+|6     |LUT4     |    39|
+|7     |LUT5     |   138|
+|8     |LUT6     |   352|
+|9     |MUXF7    |    29|
+|10    |MUXF8    |    14|
+|11    |RAM32M   |    10|
+|12    |RAM32X1D |     4|
+|13    |RAM64X1S |    32|
+|14    |RAMB18E1 |     1|
+|15    |FDRE     |   329|
+|16    |FDSE     |     5|
+|17    |LD       |    38|
+|18    |LDC      |     8|
+|19    |LDP      |     1|
+|20    |IBUF     |     1|
+|21    |OBUF     |   160|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------+----------------+------+
+|      |Instance             |Module          |Cells |
++------+---------------------+----------------+------+
+|1     |top                  |                |  1368|
+|2     |  Data_Memory_DP     |Data_Memory     |    32|
+|3     |  BPCaddDP           |bpcadd          |     8|
+|4     |  ALU_DP             |ALU             |    40|
+|5     |  ControlUnitDP      |ControlUnit     |    78|
+|6     |  EXEMEM_Pipeline_DP |EXEMEM_Pipeline |    77|
+|7     |  IDEXEPipeline_DP   |IDEXEPipeline   |   707|
+|8     |  IFIDPipelineDP     |IFIDPipeline    |    64|
+|9     |  MEMWB_Pipeline_DP  |MEMWB_Pipeline  |    71|
+|10    |  PcAdderDP          |PcAdder         |     8|
+|11    |  ProgramCounterDP   |ProgramCounter  |    33|
+|12    |  RegFileDP          |RegFile         |    14|
+|13    |  WriteBackMux_DP    |WriteBackMux    |    32|
+|14    |  equalDP            |equal           |     3|
+|15    |  exeaddDP           |exeadd          |    36|
++------+---------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:01:22 . Memory (MB): peak = 1315.797 ; gain = 837.531
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 187 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:22 . Memory (MB): peak = 1315.797 ; gain = 837.531
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:01:22 . Memory (MB): peak = 1315.797 ; gain = 837.531
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1315.797 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 172 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 46 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1335.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 93 instances were transformed.
+  LD => LDCE: 38 instances
+  LDC => LDCE: 8 instances
+  LDP => LDPE: 1 instance 
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (inverted pins: WCLK) (RAMS64E): 32 instances
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 1db51c83
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:01:26 . Memory (MB): peak = 1335.973 ; gain = 861.695
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1335.973 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/rayan/Desktop/Final_Project_ExtraCredit/Final_Project.runs/synth_1/Datapath.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Datapath_utilization_synth.rpt -pb Datapath_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 30 23:47:33 2024...
+
+*** Running vivado
+    with args -log Datapath.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Datapath.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Datapath.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 474.441 ; gain = 178.484
+Command: synth_design -top Datapath -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14112
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 921.062 ; gain = 442.629
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9694] invalid size of integer constant literal [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:721]
+INFO: [Synth 8-6157] synthesizing module 'Datapath' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:884]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:41]
+INFO: [Synth 8-6157] synthesizing module 'PcAdder' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'PcAdder' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:94]
+INFO: [Synth 8-6157] synthesizing module 'IFIDPipeline' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'IFIDPipeline' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:106]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:148]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:245]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:241]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:148]
+INFO: [Synth 8-6157] synthesizing module 'RegrtMux' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:503]
+INFO: [Synth 8-6155] done synthesizing module 'RegrtMux' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:503]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:518]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:518]
+INFO: [Synth 8-6157] synthesizing module 'ImmExt' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:551]
+INFO: [Synth 8-6155] done synthesizing module 'ImmExt' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:551]
+INFO: [Synth 8-6157] synthesizing module 'fwdbMux' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'fwdbMux' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:473]
+INFO: [Synth 8-6157] synthesizing module 'fwdaMux' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:442]
+INFO: [Synth 8-6155] done synthesizing module 'fwdaMux' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:442]
+INFO: [Synth 8-6157] synthesizing module 'IDEXEPipeline' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:567]
+INFO: [Synth 8-6155] done synthesizing module 'IDEXEPipeline' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:567]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Mux' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:613]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Mux' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:613]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:629]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:637]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:629]
+INFO: [Synth 8-6157] synthesizing module 'EXEMEM_Pipeline' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:652]
+INFO: [Synth 8-6155] done synthesizing module 'EXEMEM_Pipeline' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:652]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:680]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:720]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:680]
+INFO: [Synth 8-6157] synthesizing module 'MEMWB_Pipeline' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:729]
+INFO: [Synth 8-6155] done synthesizing module 'MEMWB_Pipeline' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:729]
+INFO: [Synth 8-6157] synthesizing module 'WriteBackMux' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:753]
+INFO: [Synth 8-6155] done synthesizing module 'WriteBackMux' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:753]
+INFO: [Synth 8-6157] synthesizing module 'npcModule' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'npcModule' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:123]
+INFO: [Synth 8-6157] synthesizing module 'Lextender' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:770]
+INFO: [Synth 8-6155] done synthesizing module 'Lextender' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:770]
+INFO: [Synth 8-6157] synthesizing module 'Rextender' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:781]
+INFO: [Synth 8-6155] done synthesizing module 'Rextender' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:781]
+INFO: [Synth 8-6157] synthesizing module 'bpcadd' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:792]
+INFO: [Synth 8-6155] done synthesizing module 'bpcadd' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:792]
+INFO: [Synth 8-6157] synthesizing module 'equal' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:804]
+INFO: [Synth 8-6155] done synthesizing module 'equal' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:804]
+INFO: [Synth 8-6157] synthesizing module 'exeadd' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:821]
+INFO: [Synth 8-6155] done synthesizing module 'exeadd' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:821]
+INFO: [Synth 8-6157] synthesizing module 'Alumux1' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:831]
+INFO: [Synth 8-6155] done synthesizing module 'Alumux1' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:831]
+INFO: [Synth 8-6157] synthesizing module 'jalf' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:865]
+INFO: [Synth 8-6155] done synthesizing module 'jalf' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:865]
+INFO: [Synth 8-6157] synthesizing module 'jalMux' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:848]
+INFO: [Synth 8-6155] done synthesizing module 'jalMux' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:848]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath' (0#1) [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:884]
+WARNING: [Synth 8-7129] Port eimm32[31] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[30] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[29] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[28] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[27] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[26] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[25] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[24] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[23] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[22] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[21] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[20] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[19] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[18] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[17] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[16] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[15] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[14] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[13] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[12] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[11] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[5] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[4] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[3] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[2] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[1] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eimm32[0] in module Alumux1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[27] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[26] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[25] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[24] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[23] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[22] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[21] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[20] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[19] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[18] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[17] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[16] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[15] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[14] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[13] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[12] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[11] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[10] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[9] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[8] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[7] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[6] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[5] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[4] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[3] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[2] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[1] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpc4[0] in module Lextender is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[31] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[30] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[29] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[28] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[27] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[26] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[25] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[24] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[23] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[22] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[21] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[20] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[19] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[18] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[17] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[16] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[15] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[14] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[13] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[12] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[11] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[10] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[9] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[8] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[7] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[6] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[5] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[4] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[3] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[2] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[1] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r[0] in module EXEMEM_Pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[31] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[30] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[29] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[28] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[27] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[26] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[25] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[24] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[23] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[22] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[21] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[20] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[19] in module InstructionMemory is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1031.840 ; gain = 553.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1031.840 ; gain = 553.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1031.840 ; gain = 553.406
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [Synth 8-327] inferring latch for variable 'wreg_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:234]
+WARNING: [Synth 8-327] inferring latch for variable 'm2reg_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:235]
+WARNING: [Synth 8-327] inferring latch for variable 'wmem_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:236]
+WARNING: [Synth 8-327] inferring latch for variable 'aluc_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:237]
+WARNING: [Synth 8-327] inferring latch for variable 'aluimm_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:251]
+WARNING: [Synth 8-327] inferring latch for variable 'regrt_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:252]
+WARNING: [Synth 8-327] inferring latch for variable 'pcsrc_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:244]
+WARNING: [Synth 8-327] inferring latch for variable 'jal_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:243]
+WARNING: [Synth 8-327] inferring latch for variable 'i_rt_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:223]
+WARNING: [Synth 8-327] inferring latch for variable 'i_rs_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:222]
+WARNING: [Synth 8-327] inferring latch for variable 'sext_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:330]
+WARNING: [Synth 8-327] inferring latch for variable 'r_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:638]
+WARNING: [Synth 8-327] inferring latch for variable 'npc_reg' [C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.srcs/sources_1/new/CPU.v:134]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1031.840 ; gain = 553.406
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   4 Input   32 Bit        Muxes := 3     
+	  10 Input   32 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   8 Input    4 Bit        Muxes := 1     
+	  13 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	  10 Input    2 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 4     
+	  13 Input    1 Bit        Muxes := 13    
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[31]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[30]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[29]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[28]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[27]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[26]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[25]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[24]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[23]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[22]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[21]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[20]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[19]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[18]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[17]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[16]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[15]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[14]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[13]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[12]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[11]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[10]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[9]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[8]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[7]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[6]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[5]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[4]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[3]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[2]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[1]) is unused and will be removed from module Datapath.
+WARNING: [Synth 8-3332] Sequential element (npcModuleDP/npc_reg[0]) is unused and will be removed from module Datapath.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1310.957 ; gain = 832.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------------+------------+---------------+----------------+
+|Module Name       | RTL Object | Depth x Width | Implemented As | 
++------------------+------------+---------------+----------------+
+|InstructionMemory | rom        | 64x30         | LUT            | 
+|Datapath          | p_0_out    | 64x30         | Block RAM      | 
++------------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------------+-----------+----------------------+----------------+
+|Datapath    | RegFileDP/registers_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|Datapath    | Data_Memory_DP/ram_reg  | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+-------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1310.957 ; gain = 832.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------------+-----------+----------------------+----------------+
+|Datapath    | RegFileDP/registers_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|Datapath    | Data_Memory_DP/ram_reg  | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+-------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1310.957 ; gain = 832.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1310.957 ; gain = 832.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1310.957 ; gain = 832.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1310.957 ; gain = 832.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1310.957 ; gain = 832.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1310.957 ; gain = 832.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1310.957 ; gain = 832.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    35|
+|3     |LUT1     |     5|
+|4     |LUT2     |    55|
+|5     |LUT3     |   110|
+|6     |LUT4     |    39|
+|7     |LUT5     |   138|
+|8     |LUT6     |   352|
+|9     |MUXF7    |    29|
+|10    |MUXF8    |    14|
+|11    |RAM32M   |    10|
+|12    |RAM32X1D |     4|
+|13    |RAM64X1S |    32|
+|14    |RAMB18E1 |     1|
+|15    |FDRE     |   329|
+|16    |FDSE     |     5|
+|17    |LD       |    38|
+|18    |LDC      |     8|
+|19    |LDP      |     1|
+|20    |IBUF     |     1|
+|21    |OBUF     |   160|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------+----------------+------+
+|      |Instance             |Module          |Cells |
++------+---------------------+----------------+------+
+|1     |top                  |                |  1368|
+|2     |  Data_Memory_DP     |Data_Memory     |    32|
+|3     |  BPCaddDP           |bpcadd          |     8|
+|4     |  ALU_DP             |ALU             |    40|
+|5     |  ControlUnitDP      |ControlUnit     |    78|
+|6     |  EXEMEM_Pipeline_DP |EXEMEM_Pipeline |    77|
+|7     |  IDEXEPipeline_DP   |IDEXEPipeline   |   707|
+|8     |  IFIDPipelineDP     |IFIDPipeline    |    64|
+|9     |  MEMWB_Pipeline_DP  |MEMWB_Pipeline  |    71|
+|10    |  PcAdderDP          |PcAdder         |     8|
+|11    |  ProgramCounterDP   |ProgramCounter  |    33|
+|12    |  RegFileDP          |RegFile         |    14|
+|13    |  WriteBackMux_DP    |WriteBackMux    |    32|
+|14    |  equalDP            |equal           |     3|
+|15    |  exeaddDP           |exeadd          |    36|
++------+---------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1310.957 ; gain = 832.523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 187 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1310.957 ; gain = 832.523
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1310.957 ; gain = 832.523
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1310.957 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 172 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 46 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1326.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 93 instances were transformed.
+  LD => LDCE: 38 instances
+  LDC => LDCE: 8 instances
+  LDP => LDPE: 1 instance 
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (inverted pins: WCLK) (RAMS64E): 32 instances
+
+Access is denied.
+Synth Design complete | Checksum: 1db51c83
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:44 . Memory (MB): peak = 1326.406 ; gain = 851.965
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1326.406 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.runs/synth_1/Datapath.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Datapath_utilization_synth.rpt -pb Datapath_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May  1 00:21:14 2024...

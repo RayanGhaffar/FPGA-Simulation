@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed May  1 00:20:21 2024
+# Process ID: 7796
+# Current directory: C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.runs/synth_1
+# Command line: vivado.exe -log Datapath.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Datapath.tcl
+# Log file: C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.runs/synth_1/Datapath.vds
+# Journal file: C:/Users/rayan/OneDrive - The Pennsylvania State University/Documents/Sem 4/CMPEN 331/Final Project/Final_Project_ExtraCredit/Final_Project.runs/synth_1\vivado.jou
+# Running On: Rayans-Laptop, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16856 MB
+#-----------------------------------------------------------
+source Datapath.tcl -notrace
